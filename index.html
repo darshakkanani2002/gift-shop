@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Shop</title>
+    <!-- stylesheet link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- favicon link -->
+    <link rel="icon" href="./img/favicon.svg">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- swiper link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- bootstrap icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="./css/all.min.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navigation_bar navbar-expand-lg position-sticky top-0 z-3">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./img/logo.svg" class="img-fluid" alt="logo"></a>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+                aria-controls="navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+                <div class="offcanvas-header justify-content-end">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5">
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link active" aria-current="page" href="#" data-section="home">Home</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link text-nowrap " href="#product" data-section="product">Product</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link" href="#category" data-section="category">Best selling</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link" href="#gallery" data-section="gallery">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <div class="body-color">
+        <!-- hero section -->
+        <section id="home" class="mb-5">
+            <div class="swiper hero-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="">
+                                <div class="position-relative">
+                                    <img src="./img/hero-slider-01.png" class="img-fluid" alt="banner_hero_bg_001">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-6"></div>
+                                            <div class="col-lg-6 hero-slide-01-text text-lg-start">
+                                                <h1>Awesome Gift<br>
+                                                    For Your Loved Once</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide position-relative">
+                        <img src="./img/banner_hero_bg_02.png" alt="banner_hero_bg_02">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 hero-slide-02-txt text-lg-start">
+                                    <h1>Thoughtful Gifts<br>
+                                        To Celebrate Togetherness</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="position-relative">
+                            <div class="hero-slider-03">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-6 hero-slide-03-text text-lg-start">
+                                            <h1>Make Birthdays
+                                                As Special As Your Bond</h1>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="swiper hero-section-swiper">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide hero-img-swiper">
+                                                        <img src="./img/img_hero_01.png" class="img-fluid hero-img-res"
+                                                            alt="img_hero_01.png">
+                                                    </div>
+                                                    <div class="swiper-slide hero-img-swiper">
+                                                        <img src="./img/img_hero_02.png" class="img-fluid hero-img-res"
+                                                            alt="img_hero_02.png">
+                                                    </div>
+                                                    <div class="swiper-slide hero-img-swiper">
+                                                        <img src="./img/img_hero_03.png" class="img-fluid hero-img-res"
+                                                            alt="img_hero_03.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- hero section end -->
+
+        <!-- trending product -->
+        <section id="product" class="mb-5">
+            <div class="header-txt text-center">
+                <div>
+                    <h1>Trending Product</h1>
+                    <p class="text-muted">Curated to make every special moment a celebration</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="trending-product">
+                            <div class="trending-product-overlay"></div>
+                            <img class="content-image" src="./img/img_product_01.png" class="img-fluid" alt="">
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Explore more</h3>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="trending-product">
+                            <div class="trending-product-overlay"></div>
+                            <img class="content-image" src="./img/img_product_02.png" class="img-fluid" alt="">
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Explore more</h3>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="trending-product">
+                            <div class="trending-product-overlay"></div>
+                            <img class="content-image" src="./img/img_product_03.png" class="img-fluid" alt="">
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Explore more</h3>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="trending-product">
+                            <div class="trending-product-overlay"></div>
+                            <img class="content-image" src="./img/img_product_04.png" class="img-fluid" alt="">
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Explore more</h3>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="trending-product">
+                            <div class="trending-product-overlay"></div>
+                            <img class="content-image" src="./img/img_product_05.png" class="img-fluid" alt="">
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Explore more</h3>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="trending-product">
+                            <div class="trending-product-overlay"></div>
+                            <img class="content-image" src="./img/img_product_06.png" class="img-fluid" alt="">
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Explore more</h3>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="trending-product">
+                            <div class="trending-product-overlay"></div>
+                            <img class="content-image" src="./img/img_product_07.png" class="img-fluid" alt="">
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Explore more</h3>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="trending-product">
+                            <div class="trending-product-overlay"></div>
+                            <img class="content-image" src="./img/img_product_08.png" class="img-fluid" alt="">
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Explore more</h3>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- trending product end -->
+
+        <!-- product categroy  -->
+        <section id="category">
+            <div class="category-background py-5">
+                <div class="container">
+                    <div class="header-txt text-center position-relative">
+                        <h1>Product Category</h1>
+                        <p class="text-muted">Wide range of gifts for your celebration</p>
+                        <div class="category-navigation-btn">
+                            <button class="category-button-prev me-2"><img src="./img/ic_category_prev_01.svg"
+                                    class="category-icon" alt="ic_category_prev_01"></button>
+                            <button class="category-button-next ms-2"><img src="./img/ic_category_next_02.svg"
+                                    class="category-icon" alt="ic_category_next_02"></button>
+                        </div>
+                    </div>
+
+                    <div class="swiper category-swiper pt-4">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide category-slide">
+                                <div>
+                                    <img src="./img/img_product_category_01.png" class="category-img"
+                                        alt="img_product_category_01">
+                                    <div class="mt-3 text-start category-img-text">
+                                        <h3 class="pb-2">Flower Unicorn Theme</h3>
+
+                                        <div class="d-flex justify-content-between">
+                                            <div class="pt-1">
+                                                <p class="mb-0 category-price"><span class="me-2">₹800.00</span>₹540.00
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide category-slide">
+                                <div>
+                                    <img src="./img/img_product_category_02.png" class="category-img"
+                                        alt="img_product_category_01">
+                                    <div class="mt-3 text-start category-img-text">
+                                        <h3 class="pb-2">love Wooden Candle Holder</h3>
+
+                                        <div class="d-flex justify-content-between">
+                                            <div class="pt-1">
+                                                <p class="mb-0 category-price"><span class="me-2">₹600.00</span>₹520.00
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide category-slide">
+                                <div>
+                                    <img src="./img/img_product_category_03.png" class="category-img"
+                                        alt="img_product_category_01">
+                                    <div class="mt-3 text-start category-img-text">
+                                        <h3 class="pb-2">Atom Orbits Wood Wall Art</h3>
+
+                                        <div class="d-flex justify-content-between">
+                                            <div class="pt-1">
+                                                <p class="mb-0 category-price"><span class="me-2">₹650.00</span>₹420.00
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide category-slide">
+                                <div>
+                                    <img src="./img/img_product_category_04.png" class="category-img"
+                                        alt="img_product_category_01">
+                                    <div class="mt-3 text-start category-img-text">
+                                        <h3 class="pb-2">Flower Unicorn Theme</h3>
+
+                                        <div class="d-flex justify-content-between">
+                                            <div class="pt-1">
+                                                <p class="mb-0 category-price"><span class="me-2">₹740.00</span>₹550.00
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide category-slide">
+                                <div>
+                                    <img src="./img/img_product_category_05.png" class="category-img"
+                                        alt="img_product_category_05">
+                                    <div class="mt-3 text-start category-img-text">
+                                        <h3 class="pb-2">Pre Marked ganesha Round</h3>
+
+                                        <div class="d-flex justify-content-between">
+                                            <div class="pt-1">
+                                                <p class="mb-0 category-price"><span class="me-2">₹730.00</span>₹540.00
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- product category end -->
+
+        <!-- quality, unique gift, gift card -->
+        <div class="my-5">
+            <div class="container">
+                <div class="mx-5">
+                    <div class="row">
+                        <div class="col-lg-4 mt-3 d-flex justify-content-center quality-section">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <img src="./img/ic_high_quality.svg" class="img-fluid" alt="ic_high_quality">
+                                </div>
+                                <div class="ps-3">
+                                    <h4>High Quality</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mt-3 d-flex justify-content-center quality-section">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <img src="./img/ic_unique_gifts.svg" class="img-fluid" alt="ic_high_quality">
+                                </div>
+                                <div class="ps-3">
+                                    <h4>Unique Gifts</h4>
+                                    <!-- <p>Lorem ipsum dolor , adipiscing elit. vitae semper scelerisque.</p> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mt-3 d-flex justify-content-center">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <img src="./img/ic_gift_card.svg" class="img-fluid" alt="ic_high_quality">
+                                </div>
+                                <div class="ps-3">
+                                    <h4>Gift Card</h4>
+                                    <!-- <p>Lorem ipsum dolor , adipiscing elit. vitae semper scelerisque.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- quality, unique gift, gift card end-->
+
+        <!-- lippan art section -->
+        <section id="lippan_art" class="mt-5 mb-4">
+            <div class="header-txt text-center lippan-art-section pt-4">
+                <div>
+                    <h1>Lippan Art</h1>
+                    <p class="text-muted">Craft Raw Materials For DIY</p>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mt-3">
+                            <div class="position-relative">
+                                <img src="./img/img_lippan_art_01.png" class="img-fluid" alt="img_lippan_art_01">
+                                <img src="./img/img_lippan_art_001.png" class="img-fluid img-hover-lippan-art"
+                                    alt="img_lippan_art_001.png">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mt-3">
+                            <div class="position-relative">
+                                <img src="./img/img_lippan_art_02.png" class="img-fluid" alt="img_lippan_art_02">
+                                <img src="./img/img_lippan_art_002.png" class="img-fluid img-hover-lippan-art"
+                                    alt="img_lippan_art_002">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mt-3">
+                            <div class="position-relative">
+                                <img src="./img/img_lippan_art_03.png" class="img-fluid" alt="img_lippan_art_03">
+                                <img src="./img/img_lippan_art_003.png" class="img-fluid img-hover-lippan-art"
+                                    alt="img_lippan_art_003">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mt-3">
+                            <div class="position-relative">
+                                <img src="./img/img_lippan_art_04.png" class="img-fluid" alt="img_lippan_art_04">
+                                <img src="./img/img_lippan_art_004.png" class="img-fluid img-hover-lippan-art"
+                                    alt="img_lippan_art_004">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- lippan art section end-->
+
+        <!-- nature wall art section -->
+        <section class="my-5">
+            <div class="nature_wall_art_back py-5">
+                <div class="container py-3">
+                    <div class="row">
+                        <div class="col-lg-5 d-flex  align-items-center">
+                            <div class="nature-wall-art-text">
+                                <h2>Nature Wall Art Canvas</h2>
+                                <p>Make your room fancy with unique boards</p>
+                                <!-- <button>READ MORE</button> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-7 text-center">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-4 mt-2">
+                                    <img src="./img/img_nature_banner_01.png" class="img-fluid"
+                                        alt="img_nature_banner_01">
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 mt-2">
+                                    <img src="./img/img_nature_banner_02.png" class="img-fluid"
+                                        alt="img_nature_banner_02">
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 mt-2">
+                                    <img src="./img/img_nature_banner_03.png" class="img-fluid"
+                                        alt="img_nature_banner_03">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- nature wall art section end-->
+
+        <!-- gallery section -->
+        <section id="gallery">
+            <div class="header-txt text-center">
+                <div>
+                    <h1>Gallery</h1>
+                    <p class="text-muted">Most Unique from of art</p>
+                </div>
+            </div>
+
+            <div class="container-fluid text-center mt-4">
+                <div class="row align-items-lg-stretch">
+                    <div class="col-lg-2 col-md-6 col-sm-6 mt-2">
+                        <div class="position-relative">
+                            <img src="./img/img_gallery_01.png" onclick="openFullScreen(this)" class="img-fluid"
+                                alt="img_gallery_01.png">
+                            <img src="./img/img_gallery_001.png" onclick="openFullScreen(this)"
+                                class="img-fluid img-hover-gallery" alt="img_gallery_001.png">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6 mt-2">
+                        <div class="position-relative">
+                            <img src="./img/img_gallery_02.png" onclick="openFullScreen(this)" class="img-fluid"
+                                alt="img_gallery_02.png">
+                            <img src="./img/img_gallery_002.png" onclick="openFullScreen(this)"
+                                class="img-fluid img-hover-gallery" alt="img_gallery_002.png">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6 mt-2">
+                        <div class="position-relative">
+                            <img src="./img/img_gallery_03.png" onclick="openFullScreen(this)" class="img-fluid"
+                                alt="img_gallery_03.png">
+                            <img src="./img/img_gallery_003.png" onclick="openFullScreen(this)"
+                                class="img-fluid img-hover-gallery" alt="img_gallery_003.png">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6 mt-2">
+                        <div class="position-relative">
+                            <img src="./img/img_gallery_04.png" onclick="openFullScreen(this)" class="img-fluid"
+                                alt="img_gallery_04.png">
+                            <img src="./img/img_gallery_004.png" onclick="openFullScreen(this)"
+                                class="img-fluid img-hover-gallery" alt="img_gallery_004.png">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6 mt-2">
+                        <div class="position-relative">
+                            <img src="./img/img_gallery_05.png" onclick="openFullScreen(this)" class="img-fluid"
+                                alt="img_gallery_05.png">
+                            <img src="./img/img_gallery_005.png" onclick="openFullScreen(this)"
+                                class="img-fluid img-hover-gallery" alt="img_gallery_005.png">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6 mt-2">
+                        <div class="position-relative">
+                            <img src="./img/img_gallery_06.png" onclick="openFullScreen(this)" class="img-fluid"
+                                alt="img_gallery_06.png">
+                            <img src="./img/img_gallery_006.png" onclick="openFullScreen(this)"
+                                class="img-fluid img-hover-gallery" alt="img_gallery_006.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fullscreen image popup container -->
+            <div class="fullscreen-container" id="fullscreenContainer">
+                <span class="close-fullscreen" onclick="closeFullScreen()">×</span>
+                <img src="" alt="Fullscreen Image" id="fullscreenImage">
+                <div class="navigation-buttons">
+                    <button onclick="navigateImage(-1)" class="gallery-pre-btn"><i
+                            class="fa-solid fa-arrow-left"></i></button>
+                    <button onclick="navigateImage(1)" class="gallery-next-btn"><i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <!-- gallery section end -->
+
+        <!-- footer section -->
+        <footer class="mt-5">
+            <div class="footer-background pt-5">
+                <div class="container mb-5">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div>
+                                <img src="./img/logo.svg" class="img-fluid footer-logo" alt="">
+                                <p class="mt-4">Best craft supplies in India. Here, you can buy pre-made art materials
+                                    like
+                                    pre-marked MDF bases, wooden bases kids room decor.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-6 footer_header mt-3">
+                            <h6>
+                                Usefull links
+                            </h6>
+                            <p class="mt-4 mb-3">
+                                <a href="#home" class="text-decoration-none footer-usefull">Home</a>
+                            </p>
+                            <p class="mb-3">
+                                <a href="#about" class="text-decoration-none footer-usefull">About us</a>
+                            </p>
+                            <p class="mb-3">
+                                <a href="#service" class="text-decoration-none footer-usefull">Service</a>
+                            </p>
+                            <p class="mb-3">
+                                <a href="#gallery" class="text-decoration-none footer-usefull">Gallery </a>
+                            </p>
+                            <!-- <p class="mb-2">
+                                <a href="#blog" class="text-decoration-none footer-usefull">Blog</a>
+                            </p> -->
+                        </div>
+
+                        <div class="col-lg-4  col-md-6 footer_header mt-3">
+                            <h6 class="">Contact Us</h6>
+                            <div class="d-flex align-items-center mt-4">
+                                <div class="col-lg-1 me-2">
+                                    <img src="./img/ic_location.svg" alt="ic_location">
+                                </div>
+                                <div class="col-lg-11">
+                                    Plot No 508, Himayatnagar Akshya<br>
+                                    Nagar 1st Block 1st Cross, Rammurthy<br>
+                                    nagar, Bangalore-560016
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mt-4">
+                                <div class="col-lg-1 me-2">
+                                    <img src="./img/ic_mail.svg" alt="ic_mail">
+                                </div>
+                                <div class="col-lg-11">
+                                    <a class="text-decoration-none text-dark footer-usefull"
+                                        href="mailto:yexocox455@giratex.com">yexocox455@giratex.com</a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mt-4">
+                                <div class="col-lg-1 me-2">
+                                    <img src="./img/ic_call.svg" alt="ic_call">
+                                </div>
+                                <div class="col-lg-11">
+                                    <a class="text-decoration-none text-dark footer-usefull"
+                                        href="tel:+910123456789">+91
+                                        0123456789</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3  col-md-6 footer_header">
+                            <div class="footer-content">
+                                <div class="d-flex   mt-4">
+                                    <div class="footer-img pe-3">
+                                        <img src="img/img_footer_01.svg" alt="img_footer_01" class="img-fluid">
+                                    </div>
+                                    <div class="footer-img pe-3">
+                                        <img src="img/img_footer_02.svg" alt="img_footer_02" class="img-fluid">
+                                    </div>
+                                    <div class="footer-img">
+                                        <img src="img/img_footer_03.svg" alt="img_footer_03" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="d-flex  align-items-center my-2">
+                                    <div class="mt-2 footer-img pe-3">
+                                        <img src="img/img_footer_04.svg" alt="img_footer_04" class="img-fluid">
+                                    </div>
+                                    <div class="mt-2 footer-img pe-3">
+                                        <img src="img/img_footer_05.svg" alt="img_footer_05" class="img-fluid">
+                                    </div>
+                                    <div class="mt-2 footer-img">
+                                        <img src="img/img_footer_06.svg" alt="img_footer_06" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-act-text">
+                    <div class="container">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center  py-4">
+                            <div>
+                                <p class="mb-0 footer-act-text-01">@2024 All rights reserved. Designed by <a
+                                        href="https://festumfield.com/" target="_blank" class="festum-field-txt">Festum
+                                        Field</a></p>
+                            </div>
+                            <div>
+                                <div class="footer_icon d-flex">
+                                    <a href="#" class="me-4 footer-icon">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+
+                                    <a href="#" class="me-4 footer-icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+
+                                    <a href="#" class="me-4 footer-icon">
+                                        <i class="fa-brands fa-linkedin-in "></i>
+                                    </a>
+                                    <a href="#" class="footer-icon">
+                                        <i class="fa-brands fa-x-twitter "></i>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer section end -->
+    </div>
+    <!-- back-to-top -->
+    <button type="button" class="btn-floating btn-lg  back-to-top-button" id="btn-back-to-top">
+        <img src="./img/ic_back_ to_top.svg" class="img-fluid " alt="ic-back-to-top">
+    </button>
+    <!--  -->
+    <!-- main js link  -->
+    <script src="./js/main.js"></script>
+
+    <!-- bootstrap link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Jquery Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="./js/all.min.js"></script>
+</body>
+
+</html>
